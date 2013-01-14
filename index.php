@@ -32,7 +32,7 @@ get_header(); ?>
 					</section>
 				<?php endwhile; ?>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+				<?php //twentyeleven_content_nav( 'nav-below' ); ?>
 					</div>
 				</div>	
 			<?php else : ?>
