@@ -129,7 +129,7 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 				</ul>
 				</div>
 			</nav><!-- #access -->
-			<canvas id="lienzomenu" class="posicionlienzo" width="500" height="197">
+			<canvas id="lienzomenu" class="posicionlienzo" width="600" height="197">
 			</canvas>
 			
 	</header><!-- #branding -->
