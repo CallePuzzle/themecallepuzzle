@@ -97,14 +97,18 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 					<li class="page_item page-item">
 						<a title="Inicio" href="<?php echo esc_url( home_url() ); ?>" onMouseover="sobramenu1(0);" onMouseout="limpiarlienzo();" >Inicio</a>
 					</li>
+					<li class="page_item page-item abajo">
+						<a title="Inicio" href="<?php echo esc_url( home_url() ); ?>/wp-admin/" onMouseover="sobramenu2(0);" onMouseout="limpiarlienzo();" >Entrar</a>
+					</li>
+					</div>
 					<?php
 					$args=array(
 					  'orderby' => 'name',
 					  'order' => 'ASC'
 					  );
 					$categories=get_categories($args);
-						$a=2;
-						$donde=0;
+						$a=3;
+						$donde=202;
 					  foreach($categories as $category){ ?>
 						
 						<?php //capa para centrar los enlaces
