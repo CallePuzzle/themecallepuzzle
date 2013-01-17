@@ -74,7 +74,7 @@ body {
 }
 #page {
 	margin: 2em auto;
-	max-width: 1000px;
+	width: 1000px; /* antes era max-width lo cambio para que funcione en versión movil */
 }
 #branding hgroup {
 	margin: 0 7.6%;
