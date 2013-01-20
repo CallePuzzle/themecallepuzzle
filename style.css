@@ -744,7 +744,7 @@ a:active {
 #access ul {
 	font-size: 13px;
 	list-style: none;
-	margin: 0 0 0 -0.8125em;
+	margin: 0 0 0 0.1em;
 	padding-left: 0;
 }
 #access li {
@@ -754,7 +754,7 @@ a:active {
 	color: #000000;
 	display: block;
 /*	line-height: 3.333em; */
-	padding: 0 1.2125em;
+	padding: 0;
 	text-decoration: none;
 	font-family:'casual';
 }
@@ -799,7 +799,7 @@ a:active {
 	display:block;
 	position:absolute;
 	top:1px;
-	left:205px;
+	left:200px;
 }
 
 #capamenu ul li a {
@@ -818,7 +818,7 @@ a:active {
 
 #capamenu{
 	z-index:9999;
-	margin:0 1em;
+	margin:0;
 }
 
 

@@ -5,6 +5,7 @@ function pintarmenu()
 	pintarpieza(0);
 	pintarpieza(202);
 	pintarpieza(404);
+	pintarpieza(606);
 }
 
 function pintarpieza(donde){

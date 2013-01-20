@@ -25,12 +25,22 @@ get_header(); ?>
 
 					<!-- Any section element inside of this container is displayed as a slide -->
 					<div class="slides">
+				<?php
+				$idObj = get_category_by_slug('piezas'); 
+				$id = $idObj->term_id;
+				$args = 'cat='.$id;
+				?>	
+				
 				<?php /* Start the Loop */ ?>
+				<?php query_posts($args); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<section>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 					</section>
-				<?php endwhile; ?>
+				<?php endwhile; 
+				// Reset Query
+				wp_reset_query();
+				?>
 
 				<?php //twentyeleven_content_nav( 'nav-below' ); ?>
 					</div>
