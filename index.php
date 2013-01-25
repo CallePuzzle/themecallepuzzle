@@ -29,6 +29,7 @@ get_header(); ?>
 				$idObj = get_category_by_slug('piezas-sueltas'); 
 				$id = $idObj->term_id;
 				$args = 'cat='.$id;
+				define('INDEX','1');
 				?>	
 				
 				<?php /* Start the Loop */ ?>

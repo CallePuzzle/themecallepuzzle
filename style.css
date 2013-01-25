@@ -74,7 +74,7 @@ body {
 }
 #page {
 	margin: 2em auto;
-	width: 1000px; /* antes era max-width lo cambio para que funcione en versión movil */
+	max-width: 1000px;  /*antes era max-width lo cambio para que funcione en versión movil */
 }
 #branding hgroup {
 	margin: 0 7.6%;
@@ -819,6 +819,12 @@ a:active {
 #capamenu{
 	z-index:9999;
 	margin:0;
+}
+
+#capamenu ul div {
+	text-align:center;
+	width:200px;
+	float:left;
 }
 
 
@@ -2470,8 +2476,15 @@ p.comment-form-comment {
 /* =Responsive Structure
 ----------------------------------------------- */
 
-@media (max-width: 800px) {
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
 	/* Simplify the basic layout */
+	body{
+		padding:1em;
+	}
+	#page {
+		margin: 2em auto;
+		width: 800px;
+	}
 	#main #content {
 		margin: 0 7.6%;
 		width: auto;
@@ -2485,6 +2498,57 @@ p.comment-form-comment {
 		margin: 0 7.6%;
 		width: auto;
 	}
+	
+	/*escalar canvas*/
+	
+/*	#access ul li a img {
+		transform:scale(0.8);
+		-moz-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		left:-20px;
+		position:relative;
+	}
+	
+	#lienzomenu{
+		transform:scale(0.8);
+		-moz-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		display: block;
+		    left: 80px;
+		    position: absolute;
+		    top: 1px;
+	}
+	
+	.posicionlienzo {
+	    display: block;
+	    left: 160px;
+	    position: absolute;
+	    top: 1px;
+	}
+	
+	#capamenu ul div {
+		text-align:center;
+		width:160px;
+		float:left;
+	}
+	
+	#capamenu ul li a {
+	    font-size: 18pt;
+	    margin-top: 1em;
+	    padding: 0;
+	}
+	
+	
+	/* secundary */
+	
+	.widget {
+		padding-top:2em;
+	    -moz-hyphens: auto;
+	    clear: both;
+	    margin: 0 0 2.2em;
+	    word-wrap: break-word;
+	} */
+	
 	/* Simplify the showcase template */
 	.page-template-showcase-php .featured-posts {
 		min-height: 280px;

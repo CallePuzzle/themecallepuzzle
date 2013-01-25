@@ -32,7 +32,7 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php if ( is_search() || is_home() ) : // Only display Excerpts for Search ?>
+		<?php if ( is_search() || @INDEX==1 ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

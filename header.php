@@ -78,7 +78,9 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 	 */
 	wp_head();
 ?>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -93,7 +95,7 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 				</ul>
 				<div class="posicionlienzo" id="capamenu">
 					<ul>
-						<div style="text-align:center;width:200px;float:left;">
+						<div>
 					<li class="page_item page-item">
 						<a title="Inicio" href="<?php echo esc_url( home_url() ); ?>" onMouseover="sobramenu1(0);" onMouseout="limpiarlienzo();" >Inicio</a>
 					</li>
@@ -113,7 +115,7 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 						
 						<?php //capa para centrar los enlaces
 						if(!is_int($a/2)):?>
-						<div style="text-align:center;width:200px;float:left">
+						<div>
 						<?php endif;?>
 					<li class="page_item page-item <?php if(is_int($a/2)){ echo "abajo";}else{echo "float";}?>">
 						<?php echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ';

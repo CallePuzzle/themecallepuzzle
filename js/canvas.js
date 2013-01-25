@@ -3,9 +3,9 @@ window.addEventListener("load",pintarmenu,false);
 function pintarmenu()
 {
 	pintarpieza(0);
-	pintarpieza(202);
-	pintarpieza(404);
-	pintarpieza(606);
+	pintarpieza(201);
+	pintarpieza(402);
+	pintarpieza(603);
 }
 
 function pintarpieza(donde){
@@ -46,7 +46,6 @@ function pintarpieza(donde){
 	lienzo.lineTo(0+donde,197);
 	lienzo.lineTo(0+donde,105);
 	lienzo.fill();
-	
 }
 
 function sobramenu2(donde)
@@ -111,5 +110,6 @@ function sobramenu1(donde)
 function limpiarlienzo(donde)
 {
 	lienzo.clearRect(0, 0, lienzomenu.width, lienzomenu.height);
+	lienzo.scale(0.5, 0.5);
 	pintarmenu();
 }
