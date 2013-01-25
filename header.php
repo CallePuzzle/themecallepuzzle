@@ -47,12 +47,13 @@
 	?></title>
 <?php
 echo '<style>
-font-face {
+@font-face {
 font-family: casual;
 src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 }';
 ?>
 </style>
+<style id="tampage"></style>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -87,13 +88,15 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 
-			<nav id="access" role="navigation">
-				<ul>
+			
+		<!--		<ul>
 				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/logo.png" id="imagencab"/>
 				</a></li>
-				</ul>
+				</ul>-->
 				<div class="posicionlienzo" id="capamenu">
+					<canvas id="lienzomenu" class="posicionlienzo" width="800" height="197"></canvas>
+					<nav id="access" role="navigation">
 					<ul>
 						<div>
 					<li class="page_item page-item">
@@ -133,10 +136,8 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 					<?php $a++;?>
 					<?php }?>
 				</ul>
+				</nav><!-- #access -->
 				</div>
-			</nav><!-- #access -->
-			<canvas id="lienzomenu" class="posicionlienzo" width="800" height="197">
-			</canvas>
 			
 	</header><!-- #branding -->
 

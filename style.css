@@ -697,7 +697,7 @@ a:active {
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
-	height:188px;
+/*	height:188px; */
 	padding-top:1px;
 	background:#c0e3f9;
 }
@@ -732,14 +732,15 @@ a:active {
 
 
 #access {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+/*	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px; */
 	clear: both;
 	display: block;
 	float: left;
 	margin: 0 auto 6px;
 	width:100%;
+	height: 100%;
 }
 #access ul {
 	font-size: 13px;
@@ -797,19 +798,23 @@ a:active {
 
 .posicionlienzo{
 	display:block;
+}
+
+
+#lienzomenu{
 	position:absolute;
-	top:1px;
-	left:200px;
+	margin:0 auto;
+	top: 0px;
 }
 
 #capamenu ul li a {
 	font-size:20pt;
-	margin-top:1em;
+	margin-top:0em;
 	padding:0;
 }
 
 #access .abajo a {
-	margin-top:2.5em;
+	margin-top:1em;
 }
 
 #access .float {
@@ -817,8 +822,11 @@ a:active {
 }
 
 #capamenu{
+	position: relative;
 	z-index:9999;
-	margin:0;
+	margin:0 auto 0 auto;
+	width: 800px;
+	height: 188px;
 }
 
 #capamenu ul div {
