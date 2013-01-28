@@ -73,7 +73,7 @@ body {
 	padding: 0 2em;
 }
 #page {
-	margin: 2em auto;
+	margin: 0 auto;
 	max-width: 1000px;  /*antes era max-width lo cambio para que funcione en versión movil */
 }
 #branding hgroup {
@@ -693,13 +693,17 @@ a:active {
 ----------------------------------------------- */
 
 #branding {
-	border-top: 2px solid #bbb;
+/*	border-top: 2px solid #bbb; */
 	padding-bottom: 10px;
 	position: relative;
 	z-index: 9999;
-/*	height:188px; */
+	height:188px;
 	padding-top:1px;
-	background:#c0e3f9;
+	background-image: -moz-linear-gradient(left, ##c0e3f9, #39a0e1);
+	background-image: -webkit-linear-gradient(left, #c0e3f9, #39a0e1);
+	background-image: -o-linear-gradient(left, #c0e3f9, #39a0e1);
+	background-image: linear-gradient(to right, #c0e3f9, #39a0e1);
+	border-radius:15px;
 }
 #site-title {
 	margin-right: 270px;
@@ -726,6 +730,23 @@ a:active {
 	display: block;
 }
 
+#branding #titulo {
+	width:100%;
+	height:30%;
+	margin:0 auto;
+	text-align:center;
+	display:block;
+}
+
+#branding #titulo span {
+	font-family: 'casual';
+	font-size:3em;
+	text-shadow: 2px 4px 0px #000000;
+	position:relative;
+	top:-10px;
+	padding-left:5%;
+}
+
 
 /* =Menu
 -------------------------------------------------------------- */
@@ -738,7 +759,7 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
-	margin: 0 auto 6px;
+	margin: 6px auto 6px;
 	width:100%;
 	height: 100%;
 }
@@ -805,6 +826,7 @@ a:active {
 	position:absolute;
 	margin:0 auto;
 	top: 0px;
+	border-radius:15px;
 }
 
 #capamenu ul li a {
@@ -814,25 +836,30 @@ a:active {
 }
 
 #access .abajo a {
-	margin-top:1em;
+	margin-top:1.5em;
 }
 
 #access .float {
 	
 }
 
-#capamenu{
+#divcanvas{
 	position: relative;
-	z-index:9999;
 	margin:0 auto 0 auto;
 	width: 800px;
-	height: 188px;
+}
+
+#capamenu{
+	position: relative;
+	margin:0 auto 0 auto;
+	max-width: 800px;
 }
 
 #capamenu ul div {
 	text-align:center;
-	width:200px;
+	width:23%;
 	float:left;
+	margin:0 0 0 1em;
 }
 
 
@@ -2484,14 +2511,10 @@ p.comment-form-comment {
 /* =Responsive Structure
 ----------------------------------------------- */
 
-@media only screen and (min-width: 800px) and (max-width: 1000px) {
+@media (max-width: 800px) {
 	/* Simplify the basic layout */
 	body{
-		padding:1em;
-	}
-	#page {
-		margin: 2em auto;
-		width: 800px;
+		padding:0 1em;
 	}
 	#main #content {
 		margin: 0 7.6%;
@@ -2505,45 +2528,6 @@ p.comment-form-comment {
 		float: none;
 		margin: 0 7.6%;
 		width: auto;
-	}
-	
-	/*escalar canvas*/
-	
-/*	#access ul li a img {
-		transform:scale(0.8);
-		-moz-transform: scale(0.8);
-		-webkit-transform: scale(0.8);
-		left:-20px;
-		position:relative;
-	}
-	
-	#lienzomenu{
-		transform:scale(0.8);
-		-moz-transform: scale(0.8);
-		-webkit-transform: scale(0.8);
-		display: block;
-		    left: 80px;
-		    position: absolute;
-		    top: 1px;
-	}
-	
-	.posicionlienzo {
-	    display: block;
-	    left: 160px;
-	    position: absolute;
-	    top: 1px;
-	}
-	
-	#capamenu ul div {
-		text-align:center;
-		width:160px;
-		float:left;
-	}
-	
-	#capamenu ul li a {
-	    font-size: 18pt;
-	    margin-top: 1em;
-	    padding: 0;
 	}
 	
 	

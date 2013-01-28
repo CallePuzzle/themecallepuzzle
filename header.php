@@ -80,22 +80,18 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 	wp_head();
 ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
-
-			
-		<!--		<ul>
-				<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/headers/logo.png" id="imagencab"/>
-				</a></li>
-				</ul>-->
+		<div id="titulo">
+		<span style="color:#39a0e1">Calle</span><span style="color:#c0e3f9">Puzzle</span>
+		</div>
+				<div id="divcanvas"><canvas id="lienzomenu" class="posicionlienzo" width="800" height="140"></canvas></div>
 				<div class="posicionlienzo" id="capamenu">
-					<canvas id="lienzomenu" class="posicionlienzo" width="800" height="197"></canvas>
 					<nav id="access" role="navigation">
 					<ul>
 						<div>

@@ -16,7 +16,7 @@ var moverizq=1-reducir;
 //alert(reducir);
 if(reducir>1){reducir=1;moverizq=0;}
 
-document.getElementById("tampage").innerHTML="#capamenu{transform:scale("+reducir+");left:-"+((moverizq*400)-2)+"px;top:-"+moverizq*85+"px;}#access ul li a img {transform:scale("+reducir+");}#branding{height:"+reducir*188+"px;}";
+document.getElementById("tampage").innerHTML="#lienzomenu{transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-ms-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-o-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-moz-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-webkit-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;}";
 
 //document.getElementById("tampage").innerHTML="#branding{transform:scale("+reducir+");}#access ul li a img {transform:scale("+reducir+");}";
 }
