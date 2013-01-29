@@ -79,27 +79,30 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 	 */
 	wp_head();
 ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
-		<div id="titulo">
+		<!--<div id="titulo">
 		<span style="color:#39a0e1">Calle</span><span style="color:#c0e3f9">Puzzle</span>
-		</div>
-				<div id="divcanvas"><canvas id="lienzomenu" class="posicionlienzo" width="800" height="140"></canvas></div>
-				<div class="posicionlienzo" id="capamenu">
+		</div>-->
+				<section id="capamenu">
+					<section id="divcanvas">
+						<canvas id="lienzomenu" width="800" height="195"></canvas>
+						<a href=""><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png"></a>
+					</section>
 					<nav id="access" role="navigation">
 					<ul>
 						<div>
 					<li class="page_item page-item">
-						<a title="Inicio" href="<?php echo esc_url( home_url() ); ?>" onMouseover="sobramenu1(0);" onMouseout="limpiarlienzo();" >Inicio</a>
+						<a>Inicio</a>
 					</li>
 					<li class="page_item page-item abajo">
-						<a title="Inicio" href="<?php echo esc_url( home_url() ); ?>/wp-admin/" onMouseover="sobramenu2(0);" onMouseout="limpiarlienzo();" >Entrar</a>
+						<a>Entrar</a>
 					</li>
 					</div>
 					<?php
@@ -133,7 +136,7 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 					<?php }?>
 				</ul>
 				</nav><!-- #access -->
-				</div>
+				</section>
 			
 	</header><!-- #branding -->
 

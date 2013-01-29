@@ -696,7 +696,6 @@ a:active {
 /*	border-top: 2px solid #bbb; */
 	padding-bottom: 10px;
 	position: relative;
-	z-index: 9999;
 	height:188px;
 	padding-top:1px;
 	background-image: -moz-linear-gradient(left, ##c0e3f9, #39a0e1);
@@ -705,32 +704,8 @@ a:active {
 	background-image: linear-gradient(to right, #c0e3f9, #39a0e1);
 	border-radius:15px;
 }
-#site-title {
-	margin-right: 270px;
-	padding: 3.65625em 0 0;
-}
-#site-title a {
-	color: #111;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 36px;
-	text-decoration: none;
-}
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
-	color: #1982d1;
-}
-#site-description {
-	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 3.65625em 0;
-}
-#branding img {
-	display: block;
-}
 
-#branding #titulo {
+/*#branding #titulo {
 	width:100%;
 	height:30%;
 	margin:0 auto;
@@ -745,8 +720,7 @@ a:active {
 	position:relative;
 	top:-10px;
 	padding-left:5%;
-}
-
+} */
 
 /* =Menu
 -------------------------------------------------------------- */
@@ -759,7 +733,7 @@ a:active {
 	clear: both;
 	display: block;
 	float: left;
-	margin: 6px auto 6px;
+	margin: 20px auto;
 	width:100%;
 	height: 100%;
 }
@@ -780,35 +754,6 @@ a:active {
 	text-decoration: none;
 	font-family:'casual';
 }
-#access ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 3.333em;
-	left: 0;
-	width: 188px;
-	z-index: 99999;
-}
-#access ul ul ul {
-	left: 100%;
-	top: 0;
-}
-#access ul ul a {
-	background: #f9f9f9;
-	border-bottom: 1px dotted #ddd;
-	color: #444;
-	font-size: 13px;
-	font-weight: normal;
-	height: auto;
-	line-height: 1.4em;
-	padding: 10px 10px;
-	width: 168px;
-}
-
 
 #access .current-menu-item > a,
 #access .current-menu-ancestor > a,
@@ -817,17 +762,6 @@ a:active {
 	font-weight: bold;
 }
 
-.posicionlienzo{
-	display:block;
-}
-
-
-#lienzomenu{
-	position:absolute;
-	margin:0 auto;
-	top: 0px;
-	border-radius:15px;
-}
 
 #capamenu ul li a {
 	font-size:20pt;
@@ -836,7 +770,7 @@ a:active {
 }
 
 #access .abajo a {
-	margin-top:1.5em;
+	margin-top:2em;
 }
 
 #access .float {
@@ -845,9 +779,36 @@ a:active {
 
 #divcanvas{
 	position: relative;
-	margin:0 auto 0 auto;
-	width: 800px;
+	margin:1px auto;
+	max-width: 800px;
 }
+
+#capamenu a img {
+	position:absolute;
+	top:-1px;
+	float:left;
+	z-index:9999;
+	border-radius:15px;
+		opacity: .999;
+
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+
+#capamenu a:hover img{
+	opacity: 0.05;
+	z-index:9999;
+}
+
+#lienzomenu{
+	position:absolute;
+	margin:0 auto;
+	top: 0px;
+	border-radius:15px;
+}
+
 
 #capamenu{
 	position: relative;

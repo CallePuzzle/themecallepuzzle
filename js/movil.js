@@ -13,10 +13,12 @@ function tamanohead()
 
 var reducir=ancho/(800+5);
 var moverizq=1-reducir;
+var alto=0.9;
+var altoletras=1.1;
 //alert(reducir);
 if(reducir>1){reducir=1;moverizq=0;}
 
-document.getElementById("tampage").innerHTML="#lienzomenu{transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-ms-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-o-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-moz-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;-webkit-transform:scale("+reducir+",1);left:-"+((moverizq*400)-2)+"px;}";
+document.getElementById("tampage").innerHTML="#lienzomenu{transform:scale("+reducir+","+alto+");;-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*400)-2)+"px;}#logo{transform:scale("+reducir+","+alto+");-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*100)-2)+"px;}";
 
 //document.getElementById("tampage").innerHTML="#branding{transform:scale("+reducir+");}#access ul li a img {transform:scale("+reducir+");}";
 }
