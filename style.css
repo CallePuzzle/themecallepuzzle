@@ -2491,6 +2491,9 @@ p.comment-form-comment {
 		width: auto;
 	}
 	
+	#capamenu ul li a {
+		font-size:18pt;
+	}
 	
 	/* secundary */
 	
@@ -2711,6 +2714,16 @@ p.comment-form-comment {
 		width: 100%;
 		height: auto;
 	}
+	
+	#capamenu ul div {
+	    
+	    margin: 0 0 0 0.5em;
+	 
+	}
+	
+	#capamenu ul li a {
+		font-size:16pt;
+	}
 
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -2722,6 +2735,16 @@ p.comment-form-comment {
 	}
 	#branding {
 		border-top: none;
+	}
+	
+	#capamenu ul div {
+	    
+	    margin: 0 0 0 0.5em;
+	 
+	}
+	
+	#capamenu ul li a {
+		font-size:16pt;
 	}
 
 }
