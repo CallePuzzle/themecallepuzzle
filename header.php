@@ -56,8 +56,8 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 <style id="tampage"></style>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/reveal.min.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -79,6 +79,9 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 	 */
 	wp_head();
 ?>
+<?php
+echo "<script> var home = '".home_url()."';</script>"; 
+?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
@@ -93,7 +96,7 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 				<section id="capamenu">
 					<section id="divcanvas">
 						<canvas id="lienzomenu" width="800" height="195"></canvas>
-						<a href=""><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png"></a>
+						<a href="#"><div id="inicio"></div><div id="entrar"></div><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png"></a>
 					</section>
 					<nav id="access" role="navigation">
 					<ul>

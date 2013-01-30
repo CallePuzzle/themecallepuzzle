@@ -799,24 +799,6 @@ a:active {
 
 #capamenu a:hover img{
 	opacity: 0.05;
-	z-index:999;
-}
-
-#inicio{
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:198px;
-	height:99px;
-	z-index:9999;
-}
-
-#entrar{
-	position:absolute;
-	top:99px;
-	left:0px;
-	width:198px;
-	height:99px;
 	z-index:9999;
 }
 
@@ -2492,7 +2474,7 @@ p.comment-form-comment {
 
 @media (max-width: 800px) {
 	/* Simplify the basic layout */
-/*	body{
+	body{
 		padding:0 1em;
 	}
 	#main #content {
@@ -2502,24 +2484,12 @@ p.comment-form-comment {
 	#nav-below {
 		border-bottom: 1px solid #ddd;
 		margin-bottom: 1.625em;
-	} */
-	
-	#main #primary {
-		margin:0;
 	}
-	
-	#main #content {
-		margin: 0 0 2em 5.6%;
-		width:69%;
-	} 
 	#main #secondary {
 		float: none;
 		margin: 0 7.6%;
 		width: auto;
-	} 
-	
-	.reveal .slides > section, .reveal .slides > section > section {width:120%;}
-	.reveal .controls {left:5%;width:130%;}
+	}
 	
 	#capamenu ul li a {
 		font-size:18pt;
@@ -2749,16 +2719,14 @@ p.comment-form-comment {
 	
 	#capamenu ul div {
 	    
-	    margin: 2em 0 0 0.5em;
+	    margin: 0 0 0 0.5em;
 	 
 	}
 	
 	#capamenu ul li a {
-		font-size:14pt;
+		font-size:16pt;
 	}
-	.reveal {
-	    height: 400px;
-	}
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -2780,9 +2748,6 @@ p.comment-form-comment {
 	
 	#capamenu ul li a {
 		font-size:16pt;
-	}
-	.reveal {
-	    height: 400px;
 	}
 
 }
