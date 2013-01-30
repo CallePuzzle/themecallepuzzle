@@ -805,7 +805,6 @@ a:active {
 #inicio{
 	position:absolute;
 	top:0px;
-	left:0px;
 	width:198px;
 	height:99px;
 	z-index:9999;
@@ -814,7 +813,6 @@ a:active {
 #entrar{
 	position:absolute;
 	top:99px;
-	left:0px;
 	width:198px;
 	height:99px;
 	z-index:9999;
