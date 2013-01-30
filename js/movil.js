@@ -1,4 +1,4 @@
-window.addEventListener("load",tamanohead,false);
+
 window.addEventListener("load",moviltouch,false);
 
 function tamanohead()

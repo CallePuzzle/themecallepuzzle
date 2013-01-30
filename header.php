@@ -89,6 +89,20 @@ echo "<script> var home = '".home_url()."';</script>";
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
+	<script>
+
+		var ancho=$('#page').width();
+
+		var reducir=ancho/(800+30);
+		var moverizq=1-reducir;
+		var alto=0.9;
+		var altoletras=1.1;
+		//alert(reducir);
+		if(reducir>1){reducir=1;moverizq=0;}
+
+		document.getElementById("tampage").innerHTML="#logo{transform:scale("+reducir+","+alto+");-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*100)-2)+"px;}#inicio{transform:scale("+reducir+","+alto+");-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*100)-2)+"px;}#entrar{transform:scale("+reducir+","+alto+");-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*100)-2)+"px;}#lienzomenu{transform:scale("+reducir+","+alto+");;-ms-transform:scale("+reducir+","+alto+");-o-transform:scale("+reducir+","+alto+");-moz-transform:scale("+reducir+","+alto+");-webkit-transform:scale("+reducir+","+alto+");left:-"+((moverizq*400)-2)+"px;}";
+
+	</script>
 	<header id="branding" role="banner">
 		<!--<div id="titulo">
 		<span style="color:#39a0e1">Calle</span><span style="color:#c0e3f9">Puzzle</span>
