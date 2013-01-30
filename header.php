@@ -93,7 +93,7 @@ echo "<script> var home = '".home_url()."';</script>";
 
 		var ancho=$('#page').width();
 
-		var reducir=ancho/(800+30);
+		var reducir=ancho/(800+10);
 		var moverizq=1-reducir;
 		var alto=0.9;
 		var altoletras=1.1;
