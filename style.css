@@ -1994,7 +1994,7 @@ section.recent-posts .other-recent-posts li:after {
 	margin:0;
 }
 
-#noticias header h1 a:active a:focus a:hover {
+#noticias .entry-title a:hover {
 	color:#000000;
 }
 
