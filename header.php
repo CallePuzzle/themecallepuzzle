@@ -130,8 +130,13 @@ echo "<script> var home = '".home_url()."';</script>";
 					$categories=get_categories($args);
 						$a=3;
 						$donde=202;
-					  foreach($categories as $category){ ?>
 						
+						$idObj = get_category_by_slug('noticias'); 
+						$idnoticias = $idObj->term_id;
+						
+					  foreach($categories as $category){ ?>
+						<?php //quita noticias del menú
+						if(!($idnoticias==$category->term_id)): ?>
 						<?php //capa para centrar los enlaces
 						if(!is_int($a/2)):?>
 						<div>
@@ -150,6 +155,7 @@ echo "<script> var home = '".home_url()."';</script>";
 					</li>
 					<?php if(is_int($a/2)){ echo "</div>"; $donde=$donde+202;} ?>
 					<?php $a++;?>
+					<?php endif;?>
 					<?php }?>
 				</ul>
 				</nav><!-- #access -->

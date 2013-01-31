@@ -1970,6 +1970,37 @@ section.recent-posts .other-recent-posts li:after {
 /* =Widgets
 ----------------------------------------------- */
 
+/* noticias */
+
+
+#noticias .titulo {
+	font-size: 34px;
+	    font-weight: bold;
+	    line-height: 1.5em;
+		font-family:casual;
+}
+
+#noticias .entry-title {
+	font-size: 20px;
+	padding:0;
+}
+
+#noticias .entry-summary {
+	padding:0;
+}
+
+#noticias article {
+	padding:0;
+	margin:0;
+}
+
+#noticias header h1 a:active a:focus a:hover {
+	color:#000000;
+}
+
+/*------------*/
+
+
 .widget-area {
 	font-size: 12px;
 }
