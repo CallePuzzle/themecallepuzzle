@@ -16,6 +16,7 @@ if ( 'content' != $current_layout ) :
 			
 			
 			<?php
+			if(get_category_by_slug('noticias')):
 			$idObj = get_category_by_slug('noticias'); 
 			$id = $idObj->term_id;
 			$args = 'cat='.$id;
@@ -34,6 +35,7 @@ if ( 'content' != $current_layout ) :
 			<?php
 			// Reset Query
 			wp_reset_query();
+		endif;
 			?>
 			
 			
