@@ -83,10 +83,9 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 	wp_head();
 ?>
 <?php
-echo "<script> var home = '".home_url()."';</script>"; 
+echo "<script> var home = '".miPATH."';</script>"; 
 ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider-min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
 
@@ -96,9 +95,9 @@ echo "<script> var home = '".home_url()."';</script>";
 <div id="page" class="hfeed">
 
 	<div id="puzzle-panel" tabindex="-1" style="height: 0px;">
-		jfdk <br>
-		adjfaj <br><br><br><br> 
-		añsdfaj
+
+
+		
 	</div>
 
 	<script>
@@ -147,8 +146,11 @@ echo "<script> var home = '".home_url()."';</script>";
 						$a=4;
 						$donde=202;
 						
-						$idObj = get_category_by_slug('noticias'); 
-						$idnoticias = $idObj->term_id;
+						$idObj = get_category_by_slug('noticias');
+						if($idObj)
+						{
+							$idnoticias = $idObj->term_id;
+						}
 						
 					  foreach($categories as $category){ ?>
 						<?php //quita noticias del menú
