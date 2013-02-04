@@ -2,16 +2,16 @@ window.addEventListener("load",pintarmenu,false);
 
 function pintarmenu()
 {
+	var elemento=document.getElementById('lienzomenu');
+	lienzo=elemento.getContext('2d');
+	
 	pintarpieza(0);
 	pintarpieza(201);
 	pintarpieza(402);
 	pintarpieza(603);
 }
 
-function pintarpieza(donde){
-	
-	var elemento=document.getElementById('lienzomenu');
-	lienzo=elemento.getContext('2d');	
+function pintarpieza(donde){	
 		
 	var gradiente=lienzo.createLinearGradient(50+donde,0,50+donde,130);
 	gradiente.addColorStop(0,'#c0e3f9');

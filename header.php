@@ -8,7 +8,10 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-?><!DOCTYPE html>
+define('miPATH', "http://".$_SERVER['HTTP_HOST']."/");
+?>
+
+<!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->
@@ -82,13 +85,22 @@ src: url('.get_template_directory_uri().'/AppleCasual.otf) format("opentype");
 <?php
 echo "<script> var home = '".home_url()."';</script>"; 
 ?>
-<script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/movil.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/canvas.js" type="text/javascript"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
+
+	<div id="puzzle-panel" tabindex="-1" style="height: 0px;">
+		jfdk <br>
+		adjfaj <br><br><br><br> 
+		añsdfaj
+	</div>
+
 	<script>
 
 		var ancho=$('#page').width();
@@ -116,19 +128,23 @@ echo "<script> var home = '".home_url()."';</script>";
 					<ul>
 						<div>
 					<li class="page_item page-item">
-						<a>Inicio</a>
+						<a>CallePuzzle</a>
 					</li>
 					<li class="page_item page-item abajo">
 						<a>Entrar</a>
 					</li>
 					</div>
+					<div>
+					<li class="page_item page-item">
+						<a onMouseover="sobramenu1(202)" onMouseout="limpiarlienzo()" href="<?php echo miPATH;?>">Inicio</a>
+					</li>
 					<?php
 					$args=array(
 					  'orderby' => 'name',
 					  'order' => 'ASC'
 					  );
 					$categories=get_categories($args);
-						$a=3;
+						$a=4;
 						$donde=202;
 						
 						$idObj = get_category_by_slug('noticias'); 
