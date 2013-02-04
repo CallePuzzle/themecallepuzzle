@@ -151,6 +151,10 @@ echo "<script> var home = '".miPATH."';</script>";
 						{
 							$idnoticias = $idObj->term_id;
 						}
+						else
+						{
+							$idnoticias = null ;
+						}
 						
 					  foreach($categories as $category){ ?>
 						<?php //quita noticias del menú
