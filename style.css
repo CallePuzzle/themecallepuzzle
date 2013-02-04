@@ -345,6 +345,16 @@ body {
 	-o-transition: height 1s; /* Opera */
 }
 
+#puzzle-panel section {
+	margin-top: 1em;
+}
+
+#puzzle-panel li {
+	list-style-type: none;
+	line-height: 1.1;
+	margin-top: 0.5em;
+}
+
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
@@ -860,16 +870,16 @@ a:active {
 
 
 /* Search Form */
-#branding #searchform {
+#puzzle-panel #searchform {
 	position: absolute;
-	top: 3.8em;
+	top: 2em;
 	right: 7.6%;
 	text-align: right;
 }
-#branding #searchform div {
+#puzzle-panel #searchform div {
 	margin: 0;
 }
-#branding #s {
+#puzzle-panel #s {
 	float: right;
 	-webkit-transition-duration: 400ms;
 	-webkit-transition-property: width, background;
@@ -882,35 +892,35 @@ a:active {
 	-o-transition-timing-function: ease;
 	width: 72px;
 }
-#branding #s:focus {
+#puzzle-panel #s:focus {
 	background-color: #f9f9f9;
 	width: 196px;
 }
-#branding #searchsubmit {
+#puzzle-panel #searchsubmit {
 	display: none;
 }
-#branding .only-search #searchform {
+#puzzle-panel .only-search #searchform {
 	top: 5px;
 	z-index: 1;
 }
-#branding .only-search #s {
+#puzzle-panel .only-search #s {
 	background-color: #666;
 	border-color: #000;
 	color: #222;
 }
-#branding .only-search #s,
-#branding .only-search #s:focus {
+#puzzle-panel .only-search #s,
+#puzzle-panel .only-search #s:focus {
 	width: 85%;
 }
-#branding .only-search #s:focus {
+#puzzle-panel .only-search #s:focus {
 	background-color: #bbb;
 }
-#branding .with-image #searchform {
+#puzzle-panel .with-image #searchform {
 	top: auto;
 	bottom: -27px;
 	max-width: 195px;
 }
-#branding .only-search + #access div {
+#puzzle-panel .only-search + #access div {
 	padding-right: 205px;
 }
 
@@ -2726,7 +2736,7 @@ p.comment-form-comment {
 		margin-right: 0;
 	}
 	/* Make sure the logo and search form don't collide */
-	#branding #searchform {
+	#puzzle-panel #searchform {
 		top: 1.625em !important;
 	}
 	/* Floated content doesn't work well at this size */

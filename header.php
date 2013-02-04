@@ -8,7 +8,7 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-define('miPATH', "http://".$_SERVER['HTTP_HOST']."/");
+define('miPATH', home_url());
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +95,18 @@ echo "<script> var home = '".miPATH."';</script>";
 <div id="page" class="hfeed">
 
 	<div id="puzzle-panel" tabindex="-1" style="height: 0px;">
-
+		<section>
+			<ul>
+				<li>Redes sociales</li>
+				<ul>
+					<li><a href="https://www.facebook.com/pages/CallePuzzle/382047865144412" target="_TOP" title="CallePuzzle">Página Facebook</a></li>
+					<li><a href="https://twitter.com/callepuzzle" class="twitter-follow-button" data-show-count="false" data-lang="en">Twitter @callepuzzle</a> </li>
+				</ul>
+			</ul>
+		</section>
+		
+				<?php get_search_form(); ?>
+				
 
 		
 	</div>
@@ -120,7 +131,7 @@ echo "<script> var home = '".miPATH."';</script>";
 		</div>-->
 				<section id="capamenu">
 					<section id="divcanvas">
-						<canvas id="lienzomenu" width="800" height="195"></canvas>
+						<canvas id="lienzomenu" width="800" height="198"></canvas>
 						<a href="#"><div id="inicio"></div><div id="entrar"></div><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/headers/logo.png"></a>
 					</section>
 					<nav id="access" role="navigation">
