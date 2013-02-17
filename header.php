@@ -137,70 +137,78 @@ echo "<script> var home = '".miPATH."';</script>";
 					<nav id="access" role="navigation">
 					<ul>
 						<div>
-					<li class="page_item page-item">
-						<a>CallePuzzle</a>
-					</li>
-					<li class="page_item page-item abajo">
-						<a>Entrar</a>
-					</li>
-					</div>
-					<div>
-					<li class="page_item page-item">
-						<a onMouseover="sobramenu1(202)" onMouseout="limpiarlienzo()" href="<?php echo miPATH;?>">Inicio</a>
-					</li>
-					<?php
-					$args=array(
-					  'orderby' => 'name',
-					  'order' => 'ASC'
-					  );
-					$categories=get_categories($args);
-						$a=4;
-						$donde=202;
-						
-						$idObj = get_category_by_slug('noticias');
-						if($idObj)
-						{
-							$idnoticias = $idObj->term_id;
-						}
-						else
-						{
-							$idnoticias = null ;
-						}
-
-						$idObj = get_category_by_slug('dev');
-						if($idObj)
-						{
-							$iddev = $idObj->term_id;
-						}
-						else
-						{
-							$iddev = null ;
-						}
-						
-					  foreach($categories as $category){ ?>
-						<?php //quita noticias y dev del menú
-						if(!(($idnoticias==$category->term_id)||($iddev==$category->term_id))): ?>
-						<?php //capa para centrar los enlaces
-						if(!is_int($a/2)):?>
+							<div>
+								<li class="page_item page-item">
+									<a>Calle Puzzle</a>
+								</li>
+							</div>
+							<div>
+								<li class="page_item page-item abajo">
+									<a>Entrar</a>
+								</li>
+							</div>
+						</div>
 						<div>
+							<div>
+								<li class="page_item page-item">
+									<a onMouseover="sobramenu1(202)" onMouseout="limpiarlienzo()" href="<?php echo miPATH;?>">Inicio</a>
+								</li>
+							</div>
+						<?php
+						$args=array(
+						  'orderby' => 'name',
+						  'order' => 'ASC'
+						  );
+						$categories=get_categories($args);
+							$a=4;
+							$donde=202;
+							
+							$idObj = get_category_by_slug('noticias');
+							if($idObj)
+							{
+								$idnoticias = $idObj->term_id;
+							}
+							else
+							{
+								$idnoticias = null ;
+							}
+
+							$idObj = get_category_by_slug('dev');
+							if($idObj)
+							{
+								$iddev = $idObj->term_id;
+							}
+							else
+							{
+								$iddev = null ;
+							}
+							
+						  foreach($categories as $category){ ?>
+							<?php //quita noticias y dev del menú
+							if(!(($idnoticias==$category->term_id)||($iddev==$category->term_id))): ?>
+							<?php //capa para centrar los enlaces
+							if(!is_int($a/2)):?>
+							<div>
+							<?php endif;?>
+							<div>
+							<li class="page_item page-item <?php if(is_int($a/2)){ echo "abajo";}else{echo "float";}?>">
+								<?php echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ';
+								if(is_int($a/2))
+								{
+									echo 'onMouseover="sobramenu2('.$donde.');"';
+								}
+								else
+								{
+									echo 'onMouseover="sobramenu1('.$donde.');"';
+								}
+								echo 'onMouseout="limpiarlienzo();">' . $category->name.'</a>';?>
+							</li>
+							</div>
+						<?php if(is_int($a/2)){ echo "</div>"; $donde=$donde+202;} ?>
+						<?php $a++;?>
 						<?php endif;?>
-					<li class="page_item page-item <?php if(is_int($a/2)){ echo "abajo";}else{echo "float";}?>">
-						<?php echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ';
-						if(is_int($a/2))
-						{
-							echo 'onMouseover="sobramenu2('.$donde.');"';
-						}
-						else
-						{
-							echo 'onMouseover="sobramenu1('.$donde.');"';
-						}
-						echo 'onMouseout="limpiarlienzo();">' . $category->name.'</a>';?>
-					</li>
-					<?php if(is_int($a/2)){ echo "</div>"; $donde=$donde+202;} ?>
-					<?php $a++;?>
-					<?php endif;?>
-					<?php }?>
-				</ul>
+						<?php }?>
+					</ul>
 				</nav><!-- #access -->
 				</section>
 			

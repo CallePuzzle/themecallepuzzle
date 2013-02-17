@@ -798,8 +798,8 @@ a:active {
 	padding:0;
 }
 
-#access .abajo a {
-	margin-top:2em;
+#access .abajo {
+	margin-top: 2em;
 }
 
 #access .float {
@@ -866,6 +866,15 @@ a:active {
 	width:23%;
 	float:left;
 	margin:0 0 0 1em;
+	height: 160px;
+	
+}
+
+#capamenu ul div div{
+	height: 50%;
+	width: 100%;
+	float:left;
+	margin:0;
 }
 
 
@@ -2808,7 +2817,10 @@ p.comment-form-comment {
 	#capamenu ul div {
 	    
 	    margin: 2em 0 0 0.5em;
-	 
+	}
+
+	#access .abajo {
+	margin-top: 1em;
 	}
 	
 	#capamenu ul li a {
@@ -2830,10 +2842,13 @@ p.comment-form-comment {
 		border-top: none;
 	}
 	
-	#capamenu ul div {
+		#capamenu ul div {
 	    
-	    margin: 0 0 0 0.5em;
-	 
+	    margin: 2em 0 0 0.5em;
+	}
+
+	#access .abajo {
+	margin-top: 1em;
 	}
 	
 	#capamenu ul li a {
