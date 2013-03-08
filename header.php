@@ -173,6 +173,16 @@ echo "<script> var home = '".miPATH."';</script>";
 								$idnoticias = null ;
 							}
 
+							$idObj = get_category_by_slug('quienes');
+							if($idObj)
+							{
+								$idquienes = $idObj->term_id;
+							}
+							else
+							{
+								$idquienes = null ;
+							}
+
 							$idObj = get_category_by_slug('dev');
 							if($idObj)
 							{
@@ -185,7 +195,7 @@ echo "<script> var home = '".miPATH."';</script>";
 							
 						  foreach($categories as $category){ ?>
 							<?php //quita noticias y dev del menú
-							if(!(($idnoticias==$category->term_id)||($iddev==$category->term_id))): ?>
+							if(!(($idnoticias==$category->term_id)||($iddev==$category->term_id)||($idquienes==$category->term_id))): ?>
 							<?php //capa para centrar los enlaces
 							if(!is_int($a/2)):?>
 							<div>
