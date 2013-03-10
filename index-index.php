@@ -52,7 +52,7 @@
 					<?php
 				$idObj = get_category_by_slug('musica'); 
 				$id = $idObj->term_id;
-				$args = 'cat='.$id.'&tag=recomendaciones';
+				$args = 'cat='.$id.'&tag=recomendaciones&posts_per_page=5';
 				?>	
 				
 					<header class="entry-header">
