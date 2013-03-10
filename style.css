@@ -1106,6 +1106,22 @@ dl.gallery-item {
 	display: block;
 }
 
+#musicaindex {
+	margin-top: 100px;
+}
+
+#musicaindex h1 {
+	font-size: 26px;
+}
+
+#musicaindex section ul li {
+	list-style-type: none;
+}
+
+#musicaindex section ul li a {
+	color: #666666;
+}
+
 /* Images */
 .entry-content img,
 .comment-content img,

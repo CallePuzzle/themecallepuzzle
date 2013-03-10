@@ -49,8 +49,12 @@ function string_limit_words($string, $word_limit)
 }
 
 
-
-
+//function by http://cfpg.me/post/WordPress%3A+Get+Tag+ID+using+only+the+Tag+Name/
+function get_tag_id_by_name($tag_name) {
+global $wpdb;
+$tag_ID = $wpdb->get_var("SELECT * FROM ".$wpdb->terms." WHERE `name` = '".$tag_name."'");
+return $tag_ID;
+}
 
 
 
