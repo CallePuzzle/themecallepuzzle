@@ -2563,12 +2563,32 @@ p.comment-form-comment {
 	line-height: 2.2em;
 	padding: 2.2em 0.5em;
 	text-align: center;
+	clear: both;
+	margin: auto;
+	overflow: hidden;
 }
 #site-generator a {
 	color: #555;
 	font-weight: bold;
 }
 
+#site-generator div {
+	margin: 0px 25px 10px 25px;
+}
+
+#wordpress {
+	margin-bottom: 20px;
+}
+
+#site-info {
+	float: left;
+	display:block;
+}
+
+#footdev {
+	float: left;
+	display:block;	
+}
 
 /* =Responsive Structure
 ----------------------------------------------- */

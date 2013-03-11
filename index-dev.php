@@ -1,7 +1,9 @@
 		<div id="primary">
 			<div id="content" role="main">
-				dev
-			<?php if ( have_posts() ) : ?>
+
+			<?php $idObj = get_category_by_slug('dev'); 
+
+			if ( $idObj ) : ?>
 
 				<?php twentyeleven_content_nav( 'nav-above' ); ?>
 				<div class="reveal">
@@ -9,7 +11,8 @@
 					<!-- Any section element inside of this container is displayed as a slide -->
 					<div class="slides">
 				<?php
-				$idObj = get_category_by_slug('piezas-sueltas'); 
+				
+
 				$id = $idObj->term_id;
 				$args = 'cat='.$id;
 				define('INDEX','1');
