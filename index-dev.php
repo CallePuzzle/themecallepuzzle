@@ -1,3 +1,17 @@
+<!-- Carga del Javascript y estilos del bloque de Github -->
+
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/github.min.css">
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.github.min.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery("#github-block").github();
+		});
+	</script>
+
+<!-- FIN Carga del Javascript del bloque de Github -->
+
+
 		<div id="primary">
 			<div id="content" role="main">
 
@@ -46,6 +60,10 @@
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
+
+			<h2>Colabora en Github</h2>
+
+				<div id="github-block"></div>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
