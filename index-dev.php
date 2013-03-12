@@ -61,9 +61,12 @@
 
 			<?php endif; ?>
 
-			<h2>Colabora en Github</h2>
+			<section id="colaboragithub">
+				<h2>Colabora en Github</h2>
 
 				<div id="github-block"></div>
+			</section>
+				
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
