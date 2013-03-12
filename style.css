@@ -1122,6 +1122,10 @@ dl.gallery-item {
 	color: #666666;
 }
 
+#github-block {
+	margin-top: 100px;
+}
+
 /* Images */
 .entry-content img,
 .comment-content img,
